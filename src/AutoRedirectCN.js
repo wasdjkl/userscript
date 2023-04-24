@@ -33,9 +33,9 @@
     // webpack
     { regex: /^https:\/\/webpack.(kr|js.org)+\//, cn: 'https://webpack.docschina.org/' },
     // Pinia
-    { regex: /^https:\/\/pinia.vuejs.org\//, cn: 'https://pinia.vuejs.org/zh/' },
+    { regex: /^https:\/\/pinia.vuejs.org\/((?!zh).)*/, cn: 'https://pinia.vuejs.org/zh/' },
     // VueRouter
-    { regex: /^https:\/\/router.vuejs.org\//, cn: 'https://router.vuejs.org/zh/' },
+    { regex: /^https:\/\/router.vuejs.org\/((?!zh).)*/, cn: 'https://router.vuejs.org/zh/' },
   ]
 
   for (const rules of redirectRules) {
