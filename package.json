@@ -1,0 +1,10 @@
+{
+  "name": "userscript",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.5",
+    "eslint": "^8.39.0",
+    "rollup": "^3.21.0",
+    "typescript": "^5.0.4"
+  }
+}
