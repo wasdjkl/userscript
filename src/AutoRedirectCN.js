@@ -27,7 +27,7 @@
     // Rollup
     { regex: /^https:\/\/rollupjs.org\//, cn: 'https://cn.rollupjs.org/' },
     // Vue.js
-    { regex: /^https:\/\/(ja|ua|fr)?.rollupjs.org\//, cn: 'https://cn.vuejs.org/' },
+    { regex: /^https:\/\/(ja|ua|fr)?.vuejs.org\//, cn: 'https://cn.vuejs.org/' },
     // Vite
     { regex: /^https:\/\/(ja|es|pt)?.vitejs.dev\//, cn: 'https://cn.vitejs.dev/' },
     // webpack
