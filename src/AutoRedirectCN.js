@@ -27,9 +27,9 @@
     // Rollup
     { regex: /^https:\/\/rollupjs.org\//, cn: 'https://cn.rollupjs.org/' },
     // Vue.js
-    { regex: /^https:\/\/(ja|ua|fr)?.vuejs.org\//, cn: 'https://cn.vuejs.org/' },
+    { regex: /^https:\/\/(ja|ua|fr)?.?vuejs.org\//, cn: 'https://cn.vuejs.org/' },
     // Vite
-    { regex: /^https:\/\/(ja|es|pt)?.vitejs.dev\//, cn: 'https://cn.vitejs.dev/' },
+    { regex: /^https:\/\/(ja|es|pt)?.?vitejs.dev\//, cn: 'https://cn.vitejs.dev/' },
     // webpack
     { regex: /^https:\/\/webpack.(kr|js.org)+\//, cn: 'https://webpack.docschina.org/' },
     // Pinia
@@ -41,11 +41,9 @@
   for (const rules of redirectRules) {
     const { regex, cn } = rules
     if (regex.test(url)) {
-      const newUrl = url.replace(regex, cn)
-      if (newUrl === url)
+      if (url.startsWith(cn))
         return
-
-      location.href = newUrl
+      location.href = url.replace(regex, cn)
     }
   }
 })()
